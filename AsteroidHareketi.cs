@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AsteroidHareketi : MonoBehaviour {
+
+
+    Rigidbody fizik;
+    public float AsteroidHizi;
+
+	void Start () {
+        fizik = GetComponent<Rigidbody>();
+        fizik.velocity = transform.forward * AsteroidHizi; //kursun için yazdığımız kodun aynisi
+	}
+	
+	
+}
